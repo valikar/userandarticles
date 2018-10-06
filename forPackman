@@ -1,0 +1,278 @@
+{
+	"id": "c2ceac96-bf22-4568-a776-fb25806d6d31",
+	"name": "Collection for TESTING Api",
+	"description": null,
+	"auth": null,
+	"events": null,
+	"variables": [],
+	"order": [
+		"93cd65db-14fc-4fd8-be52-c4ce9aff4114",
+		"5dbbfe17-89b7-48b4-954d-ac184c4e39a8",
+		"0ad9eed9-578e-4cbc-b6ca-151506c4e4a5",
+		"826329c1-2200-44a7-9ac6-98c1cc48dff1",
+		"28910f13-9ff7-4a0f-a4af-c5c2c9d50a6e",
+		"f628a6a0-aa6b-4444-94f5-eddc5d6c8d3f",
+		"92bd06ad-0578-4d38-9476-1b8a3605a895",
+		"9b85f96d-bb11-4ffc-bce5-4b45dd0519fc"
+	],
+	"folders_order": [],
+	"folders": [],
+	"requests": [
+		{
+			"id": "0ad9eed9-578e-4cbc-b6ca-151506c4e4a5",
+			"name": "Articles",
+			"url": "http://localhost:8080/api/articles",
+			"description": "Watch All Articles",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"name": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"type": "text"
+				}
+			],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": null,
+			"rawModeData": "{\n\"color\":\"YELLOW\"\n}",
+			"headers": "Content-Type: application/json\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "28910f13-9ff7-4a0f-a4af-c5c2c9d50a6e",
+			"name": "Ovet three articles",
+			"url": "http://localhost:8080/api/user/countarticle/overthree",
+			"description": "This request give you lit of user, that have over three articles.",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"name": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"type": "text"
+				}
+			],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": null,
+			"rawModeData": "{\n\"age\":\"25\"\n}",
+			"headers": "Content-Type: application/json\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "5dbbfe17-89b7-48b4-954d-ac184c4e39a8",
+			"name": "All users",
+			"url": "http://localhost:8080/api/users",
+			"description": "Watch all users",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"name": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"type": "text"
+				}
+			],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": null,
+			"rawModeData": "{\n\"color\":\"YELLOW\"\n}",
+			"headers": "Content-Type: application/json\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "826329c1-2200-44a7-9ac6-98c1cc48dff1",
+			"name": "Find where age >x",
+			"url": "http://localhost:8080/api/user/age",
+			"description": "As a body you must send JSON, that have field \"age\":\"x\", where x is number. This request give you all user,where age>x.",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"name": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"type": "text"
+				}
+			],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": null,
+			"rawModeData": "{\n\"age\":\"25\"\n}",
+			"headers": "Content-Type: application/json\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "92bd06ad-0578-4d38-9476-1b8a3605a895",
+			"name": "Save user",
+			"url": "http://localhost:8080/api/user",
+			"description": "This request save user, youm must give field \"name\":\"x\",\nage:\"y\" where you enter age and name of pson that you want to create.",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"name": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"type": "text"
+				}
+			],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": null,
+			"rawModeData": "{\n\t\"name\":\"Vasia\",\n\"age\":\"12\"\n}",
+			"headers": "Content-Type: application/json\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "93cd65db-14fc-4fd8-be52-c4ce9aff4114",
+			"name": "Loading of start DATA",
+			"url": "http://localhost:8080/api/users",
+			"description": "This request loads start data to database. It load 7 users with articles",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"name": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"type": "text"
+				}
+			],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": null,
+			"responses": [
+				{
+					"id": "cfdfd94b-c8a6-4628-9a38-4acbe8da1e2d",
+					"name": "Loading of start DATA",
+					"status": null,
+					"mime": null,
+					"language": "plain",
+					"text": "START DATA IS LOADED",
+					"responseCode": {
+						"code": 200,
+						"name": "OK"
+					},
+					"requestObject": {
+						"data": "{\n\"color\":\"YELLOW\"\n}",
+						"dataMode": "raw",
+						"headerData": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"description": "",
+								"type": "text"
+							}
+						],
+						"method": "GET",
+						"pathVariableData": [],
+						"queryParams": [],
+						"url": "http://localhost:8080/api"
+					},
+					"headers": [
+						{
+							"key": "Content-Type",
+							"value": "text/plain;charset=UTF-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "20"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 06 Oct 2018 16:31:46 GMT"
+						}
+					],
+					"cookies": null,
+					"request": "93cd65db-14fc-4fd8-be52-c4ce9aff4114",
+					"collection": "c2ceac96-bf22-4568-a776-fb25806d6d31"
+				}
+			],
+			"rawModeData": "{\n\"color\":\"YELLOW\"\n}",
+			"headers": "Content-Type: application/json\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "9b85f96d-bb11-4ffc-bce5-4b45dd0519fc",
+			"name": "Create article",
+			"url": "http://localhost:8080/api/user/2/article",
+			"description": "Create article for user with id that in request after user/id.This request save article, you must give field \"text\":\"x\",\ncolor:\"y\" where you enter text and color of enum(BLACK,WHITE,GREEN,BROWN,BLUE,YELLOW,SNOW,GRAY,DARK) of article that you want to create. ",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"name": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"type": "text"
+				}
+			],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": null,
+			"rawModeData": "{\n\t\"text\":\"Vasia\",\n\"color\":\"BLUE\"\n}",
+			"headers": "Content-Type: application/json\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "f628a6a0-aa6b-4444-94f5-eddc5d6c8d3f",
+			"name": "User by article color",
+			"url": "http://localhost:8080/api/user",
+			"description": "Give you list of user, where article color as  in response.In body you must have field \"color\":\"x\" where x is color from enum",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"name": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"type": "text"
+				}
+			],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": null,
+			"rawModeData": "{\n\t\"name\":\"Vasia\",\n\"age\":\"12\"\n}",
+			"headers": "Content-Type: application/json\n",
+			"pathVariables": {}
+		}
+	]
+}
